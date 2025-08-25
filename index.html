@@ -88,26 +88,42 @@
       width: 100%;
       border-radius: 10px;
     }
-
-    /* Responsif untuk HP */
+    /* Untuk layar kecil (HP / tablet) */
 @media (max-width: 768px) {
   #header {
-    position: relative;
-    width: 100%;
+    position: relative;   /* bukan fixed */
+    width: 100%;          /* full lebar */
     height: auto;
   }
+
+  #header .profile {
+    text-align: center;
+    padding: 10px 0;
+  }
+
   #header .profile img {
-    width: 80px;
+    width: 100px;
   }
+
   #header .profile h1 {
-    font-size: 14px;
+    font-size: 16px;
   }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
   nav ul li {
-    margin: 8px 0;
+    margin: 5px 10px;
+    list-style: none;
   }
+
   #main {
-    margin-left: 0;
-    padding: 10px;
+    margin-left: 0;   /* jangan kasih ruang di kiri */
+    padding: 15px;
   }
 }
 
@@ -356,4 +372,5 @@ style="height:100vh; background: url('https://images.unsplash.com/photo-15075254
 
 </body>
 </html>
+
 

@@ -88,45 +88,34 @@
       width: 100%;
       border-radius: 10px;
     }
-    /* Untuk layar kecil (HP / tablet) */
-@media (max-width: 768px) {
-  #header {
-    position: relative;   /* bukan fixed */
-    width: 100%;          /* full lebar */
-    height: auto;
-  }
 
-  #header .profile {
-    text-align: center;
-    padding: 10px 0;
-  }
 
-  #header .profile img {
-    width: 100px;
-  }
-
-  #header .profile h1 {
-    font-size: 16px;
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0;
-  }
-
-  nav ul li {
-    margin: 5px 10px;
-    list-style: none;
-  }
-
-  #main {
-    margin-left: 0;   /* jangan kasih ruang di kiri */
-    padding: 15px;
-  }
-}
-
+    /* ===== Responsif untuk HP ===== */
+    @media (max-width: 768px) {
+      #header {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+      #header .profile img {
+        width: 80px;
+      }
+      #header .profile h1 {
+        font-size: 14px;
+      }
+      nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 5px;
+      }
+      #main {
+        margin-left: 0;
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -372,5 +361,6 @@ style="height:100vh; background: url('https://images.unsplash.com/photo-15075254
 
 </body>
 </html>
+
 
 
